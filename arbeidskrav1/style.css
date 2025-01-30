@@ -11,19 +11,31 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: var(--grey);
+    color: black;
 
 }
 
 body {
     font-family: "Roboto", "sans-serif";
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
 
 }
 
-header nav ul {
+nav {
+    background-color: var(--white);
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+nav ul {
 
 }
 
