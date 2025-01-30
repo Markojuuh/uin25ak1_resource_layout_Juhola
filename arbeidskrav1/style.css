@@ -32,13 +32,72 @@ nav {
     display: flex;
     padding: 20px;
     border-radius: 8px;
-    
+    gap: 10px;
+
 }
 
 nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
 
+nav ul li {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: bold;
+
+}
+
+nav ul li:hover {
+    background-color: var(--lightblue);
+}
+
+nav ul li.active {
+    background-color: var(--white);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
 }
 
 main {
-
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
 }
+
+h2 {
+    font-size: 1,5rem;
+    font-weight: bold;
+    color: var(--darkblue);
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+ul.resource-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul.resource-list li {
+    margin-bottom: 5px;
+}
+
+ul.resource-list li a {
+    color: var(--lightblue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.resource-list li a:hover {
+    text-decoration: underline;
+}
+
+
