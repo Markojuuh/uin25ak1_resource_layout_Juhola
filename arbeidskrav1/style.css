@@ -139,7 +139,6 @@ p {
 }
 
 #srclinks ul {
-    list-style: none;
     padding: 0;
     margin-left: 13px;
     list-style-type: disc;
@@ -150,7 +149,7 @@ p {
 }
 
 #srclinks a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--lightblue);
     font-weight: bold;
     font-size: 13px;

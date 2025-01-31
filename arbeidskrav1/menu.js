@@ -56,6 +56,7 @@ document.querySelector(`li[data-category="HTML"]`)?.classList.add("active")
 
 console.log("Menu laget:" , categories)*/
 
+//laget menu/tab buttons dynamisk her
 let resourceHTML = ""
 
 resources.map(resource => { resourceHTML += `
@@ -64,7 +65,7 @@ resources.map(resource => { resourceHTML += `
 })
 
 document.getElementById("menu").innerHTML = resourceHTML
-
+//laget en funksjon for å vise innholdet i html fra valgt categorrier fra resusser
 function showContent(categoryname) {
     const filter = resources.filter(resource => resource.category === categoryname)
     const selectedCategory = filter[0]
@@ -78,15 +79,17 @@ function showContent(categoryname) {
                 </ul>
             </nav>
          `
+//Laget en contentContainer her
 const contentContainer = document.getElementById("contentVisible")
 contentContainer.innerHTML = contentHTML
 
 contentContainer.classList.add("content-box")
 
 document.getElementById("contentVisible").innerHTML = contentHTML
+//Fjernet "active" fra alle tabs og satt for bare den som er klikket på
 document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"))
 document.querySelector(`button[onclick="showContent('${categoryname}')"]`).classList.add("active")
 
 }
-
+//vise HTML category som default når siden lastes opp
 showContent("HTML")
